@@ -1,4 +1,4 @@
-// components/ProfileList.tsx
+
 import React from 'react';
 import { usePortfolio } from '../context/PortfolioContext';
 import { Link } from 'react-router-dom';
