@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+Portfolio Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic portfolio generator built with React + TypeScript that allows users to:
 
-Currently, two official plugins are available:
+Fill out a detailed portfolio form
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Choose from pre-designed templates
 
-## Expanding the ESLint configuration
+Render and preview their portfolio instantly
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🧩 Template Selection: Choose from available templates (currently Template 1 and Template 2)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+📝 Dynamic Form: Input fields like name, title, tagline, bio, contact info, skills, and social links
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🔄 Live Preview: Instantly renders portfolio using the selected template
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+💾 LocalStorage: Data is stored in local storage for persistence without backend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Project Structure
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+portfolio-app/
+├── public/
+├── src/
+│   ├── components/
+│   ├── templates/
+│   ├── context/
+│   ├── App.tsx
+│   ├── main.tsx
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+
+Getting Started
+
+Clone the repo:
+
+git clone https://github.com/Aditisp11/PortfolioGenerator.git
+
+Install dependencies:
+
+cd portfolio-app
+npm install
+
+Run the development server:
+
+npm run dev
+
+Open in browser:
+
+http://localhost:5173/
+
+Technologies Used
+
+React
+
+TypeScript
+
+React Router
+
+Context API
+
+CSS Modules
+
+Vite
+
+Screenshots
+
+Include screenshots in a folder named screenshots/ inside the repo.
