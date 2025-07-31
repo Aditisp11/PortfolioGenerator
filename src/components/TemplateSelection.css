@@ -1,0 +1,34 @@
+.template-selection {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.templates {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 30px;
+}
+
+.templates button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.templates button:first-child {
+  background-color: #ffeb3b;
+  color: #333;
+}
+
+.templates button:last-child {
+  background-color: #a5d6a7;
+  color: #2e7d32;
+}
+
+.templates button:hover {
+  transform: scale(1.05);
+}
